@@ -1,3 +1,3 @@
 # book_tracker
 
-A new Flutter project.
+Aplicacion de prueba para el modulo de desarrollo de app moviles en flutter
