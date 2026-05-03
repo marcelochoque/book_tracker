@@ -20,9 +20,11 @@ class BookProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> addBook(Book book) async {
-    // Insertamos el nuevo libro en la base de datos y luego recargamos la lista de libros para reflejar el cambio
-    await _dbService.insertBook(book);
+  Future<void> addBook(String title, String author) async {
+    // instancio un nuevo objeto con los parametros recibidos
+    // lo escribo en la db y sincronizo la memoria
+    final newBook = Book(title: title, author: author);
+    await _dbService.insertBook(newBook);
     await loadBooks();
   }
 
