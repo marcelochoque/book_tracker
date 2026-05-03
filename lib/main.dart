@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'providers/book_provider.dart';
 
 void main() {
-  runApp(const BookTrackerApp());
+  runApp(
+    // Usamos ChangeNotifierProvider para proporcionar el BookProvider a toda la aplicación, 
+    //permitiendo que cualquier widget pueda acceder a los datos de los libros y actualizarse 
+    //cuando estos cambien
+    ChangeNotifierProvider(
+      create: (context) => BookProvider(),
+      child: const BookTrackerApp(),
+    ),
+  );
 }
 
 class BookTrackerApp extends StatelessWidget {
