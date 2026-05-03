@@ -1,0 +1,28 @@
+name: book_tracker
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Iconos de Cupertino para iOS
+  cupertino_icons: ^1.0.8
+  # Sqlite para almacenamiento local
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  # Resolucion de directorios
+  path: ^1.9.0
+  # Provider para manejo de estado
+  provider: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
