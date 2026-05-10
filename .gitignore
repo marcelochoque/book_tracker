@@ -43,3 +43,5 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+# En produccion no se sube el keystore, por lo que se ignora el archivo de configuracion de la firma
+#/android/key.properties
