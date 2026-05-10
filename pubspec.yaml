@@ -18,6 +18,8 @@ dependencies:
   path: ^1.9.0
   # Provider para manejo de estado
   provider: ^6.0.0
+  # Image Picker para seleccionar imagenes de la galeria
+  image_picker: ^1.1.2
 
 dev_dependencies:
   flutter_test:

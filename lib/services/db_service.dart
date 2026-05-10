@@ -28,7 +28,8 @@ class DbService {
         id INTEGER PRIMARY KEY AUTOINCREMENT, 
         title TEXT NOT NULL, 
         author TEXT NOT NULL, 
-        status INTEGER NOT NULL
+        status INTEGER NOT NULL,
+        imagePath TEXT
         )
       ''',
     );

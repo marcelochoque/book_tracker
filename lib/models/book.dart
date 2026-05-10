@@ -3,12 +3,14 @@ class Book {
   final String title;
   final String author;
   final int status; // 0 = To Read, 1 = Reading, 2 = Read
+  final String? imagePath; 
 
   Book({
     this.id,
     required this.title,
     required this.author,
     this.status = 0,
+    this.imagePath,
   });
 
   // Convert a Book into a Map. The keys must correspond to the names of the
@@ -18,7 +20,8 @@ class Book {
       'id': id,
       'title': title,
       'author': author,
-      'status': status
+      'status': status,
+      'imagePath': imagePath
     };
   }
 
@@ -28,6 +31,7 @@ class Book {
       title: map['title'],
       author: map['author'],
       status: map['status'],
+      imagePath: map['imagePath'],
     );
   }
 }
